@@ -1,1 +1,72 @@
-h1<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Indumentaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Indumentaria</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Hombres</a></li>
+        <li><a href="#">Mujeres</a></li>
+        <li><a href="#">Niños</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <h2>Bienvenidos a nuestra tienda</h2>
+      <p>Descubre las últimas tendencias en indumentaria para hombres, mujeres y niños</p>
+      <a href="#" class="boton">Ver colección</a>
+    </section>
+    <section class="productos">
+      <h2>Nuevos productos</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h3>Camisa blanca</h3>
+            <p class="precio">$1500</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h3>Pantalón negro</h3>
+            <p class="precio">$2000</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="producto3.jpg" alt="Producto 3">
+            <h3>Vestido rojo</h3>
+            <p class="precio">$2500</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Tienda de Indumentaria. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
