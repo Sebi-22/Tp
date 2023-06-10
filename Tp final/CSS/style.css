@@ -1,0 +1,309 @@
+
+html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+/* Estilos para la página de inicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .banner {
+    background-image: url("img/BANNER 2.jpg");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .boton {
+    background-color: #fff;
+    color: #333;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  
+  .boton:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para la sección de productos */
+  .productos {
+    margin: 2em 0;
+    text-align: center;
+  }
+  
+  .productos h2 {
+    font-size: 2em;
+  }
+  
+  .productos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productos li {
+    margin: 0 1em;
+  }
+  
+  .productos a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .productos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .productos h3 {
+    margin: 0.5em 0;
+  }
+  
+  .productos .precio {
+    font-weight: bold;
+  }
+  
+  /* Estilos para la sección de contacto */
+  .contacto {
+    background-color: #f7f7f7;
+    padding: 2em;
+  }
+  
+  .contacto h2 {
+    font-size: 2em;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contacto label {
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  .contacto input, .contacto textarea {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contacto button {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  
+  .contacto button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  /*menu*/
+
+  .navlogo {
+    padding-left: 40px;
+  }
+  .respmenu img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+  }
+  .respmenu input[type="checkbox"] {
+    visibility: hidden;
+  }
+  .respmenu .bi-list {
+    visibility: hidden;
+  }
+  .respmenu {
+    background-color: #19171a;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  .menu {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 550px;
+  }
+  .menu li {
+    padding: 5px 10px;
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .menu a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+  /*fin del menu inicio pag*/
+.inicioportada {
+  background-image: url(Set\ of\ clothes\,\ accessories\ for\ man\ and\ woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+.inicio {
+  background-color: #ffffff6c;
+}
+.inicio h1 {
+  font-size: 3.5rem;
+  padding: 150px 0px 250px 0px;
+  margin: 0px 0px 0px 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #262128;
+}
+.info {
+  background-color: #f9dbf5;
+  border: 3px #ffffff solid;
+  text-align: center;
+}
+.info h2 {
+  color: #414041;
+  padding: 15px 40px 0px 40px;
+}
+.info p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+}
+
+.infocon {
+  background-color: #f9dbf5;
+  border: 3px #ffffff solid;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.infocon p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+}
+/*footer*/
+.pie {
+    background-color: #641c7286;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pfooter {
+    margin: 0px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .iniciofooter {
+    margin: 0px;
+    padding: 15px 20px 35px 20px;
+    font-size: 1.5rem;
+  }
+  .iniciofooter .bi-instagram {
+    color: #151111;
+  }
+  .iniciofooter .bi-youtube {
+    color: #292525;
+  }
+  .iniciofooter .bi-facebook {
+    color: #353333;
+  }
+ 
+  /*estilo pagina de hombres
+  .infogatos h1 {
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 0px;
+  margin: 0px 0px 15px 40px;
+  font-weight: bold;
+}
+.fondotarget h4 {
+  background-color: #ffffff;
+  color: #4b0e57;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  display: block;
+  font-size: 2rem;
+}
+.fondotarget {
+  background-color: #fad6f567;
+  width: 100%;
+  text-align: center;
+}
+.fondotarget p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+}
+.infogatos {
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%;
+}
+.target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-e
