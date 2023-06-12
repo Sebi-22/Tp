@@ -325,10 +325,7 @@ button:hover {
   }
   .ventana-modal {
     margin: 20px auto;
-    background-image: url("../img/Imagen\ de\ ropa\ 2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background: #3063A4;
     padding: 20px;
     width: 450px;
     line-height: 150%;
@@ -337,25 +334,29 @@ button:hover {
     text-align: center;
     transform: scale(1);
     transition: 0.9s ease-in all;
-    font-family: 'Poppins', sans-serif;
+    font-family: "IM Fell Great Primer SC", serif;
   }
+  
   .ventana-modal img {
     width: 100%;
     display: block;
     margin: auto;
     border: none;
   }
+  
   .ventana-modal h1 {
-    color: #363536;
+    color: white;
     font-size: 2.5rem;
-    font-weight: bold;
   }
+  
   .ventana-modal p {
-    color: #292829;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.4rem;
   }
+  
+  
   .ventana-modal .boton {
-    background: #2f2f2fc0;
+    background: #1c1c1d;
     border: none;
     color: white;
     text-align: center;
@@ -365,27 +366,76 @@ button:hover {
     font-weight: 700;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
+  
   .ventana-modal .boton:hover {
-    background: #1c1c1c;
+    background: #313132;
   }
+  
   .ventana-modal .activo {
     display: block;
+    /* Se muestra aviso */
   }
+  
   .fondo-modal {
     display: none;
     background-color: rgba(0, 0, 0, 0.9176470588);
+    height: 100vh;
     padding-top: 100px;
     position: fixed;
+    /* *Fijamos fondo */
     z-index: 99;
+    /* *Colocacion detras del bloque cookies */
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
   }
+  
   .fondo-modal.activo {
     display: block;
+  }
+  
+  /* *VENTANA MODAL CON BOTON */
+  .open {
+    background-color: #3c413b;
+    border: 4px solid rgb(105, 89, 89);
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    margin-left:450px;
+  }
+  .close{
+    background-color: #1c1c1d;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
   }
   /*estilo pagina de hombres*/
     /*menu hombres*/
