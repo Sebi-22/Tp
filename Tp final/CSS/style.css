@@ -3,6 +3,15 @@ html {
     font-family: 'Poppins', sans-serif;
   }
 
+/*estilo para parte uno */
+h1{
+  background-color: #727272;
+  color: #272525;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 1%;
+}
 
 /* Estilos para la página de inicio */
 body {
@@ -44,7 +53,7 @@ body {
   }
   
   .banner {
-    background-image: url("img/BANNER 2.jpg");
+    background-image: url("../img/BANNER\ 2.jpg");
     background-size: cover;
     height: 500px;
     display: flex;
@@ -113,47 +122,68 @@ body {
   }
   
   /* Estilos para la sección de contacto */
-  .contacto {
-    background-color: #f7f7f7;
-    padding: 2em;
-  }
+ /*CONTACTO*/
+.iniciocontact {
+  color: #ffffff;
+  background-color: #19151a3f;
+  width: 100%;
+}
+.iniciocontact h1 {
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 40px;
+  margin: 0px 0px 15px 15px;
+  font-weight: bold;
+}
+.infocont {
+  margin: 20px;
+  padding: 10px 40px 10px 40px;
+}
+.infocont p {
+  text-align: justify;
+  padding: 10px 30px 10px 30px;
+  font-size: large;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 15px 35px 15px;
+}
+.formularioadop {
+  background-color: #f7d2f2;
+  width: 60%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 20px #1e042467;
+  align-items: center;
+}
+.forminfo {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.forminfo input {
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.forminfomensaje label {
+  display: inline;
+}
+button {
+  background-color: rgb(255, 255, 255);
+  color: #353435;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
   
-  .contacto h2 {
-    font-size: 2em;
-  }
-  
-  .contacto form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contacto label {
-    margin-top: 1em;
-    font-weight: bold;
-  }
-  
-  .contacto input, .contacto textarea {
-    padding: 0.5em;
-    margin: 0.5em 0;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .contacto button {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 2em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1em;
-  }
-  
-  .contacto button:hover {
-    background-color: #fff;
-    color: #333;
-  }
   /*menu*/
 
   .navlogo {
@@ -230,22 +260,44 @@ body {
   font-size: large;
 }
 
-.infocon {
-  background-color: #f9dbf5;
+.infoconsultas {
+  background-color: #b5b5b5;
   border: 3px #ffffff solid;
   text-align: center;
   margin: 30px 0px 20px 0px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.infocon p {
+.infoconsultas p {
   text-align: center;
   padding: 10px 65px 10px 65px;
   font-size: large;
 }
+/*boton c*/
+.btnCONTAC a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnCONTAC {
+  background: #444444c0;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  width: 350px;
+}
+.btnCONTAC:hover {
+  background: #131313;
+}
 /*footer*/
 .pie {
-    background-color: #641c7286;
+    background-color: #221c2386;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -263,7 +315,7 @@ body {
     font-size: 1.5rem;
   }
   .iniciofooter .bi-instagram {
-    color: #151111;
+    color: #2a2626;
   }
   .iniciofooter .bi-youtube {
     color: #292525;
@@ -271,39 +323,148 @@ body {
   .iniciofooter .bi-facebook {
     color: #353333;
   }
- 
-  /*estilo pagina de hombres
-  .infogatos h1 {
-  font-size: 2.5rem;
-  padding: 90px 0px 5px 0px;
-  margin: 0px 0px 15px 40px;
-  font-weight: bold;
-}
-.fondotarget h4 {
-  background-color: #ffffff;
-  color: #4b0e57;
-  width: 100%;
+  .ventana-modal {
+    margin: 20px auto;
+    background-image: url("../img/Imagen\ de\ ropa\ 2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    width: 450px;
+    line-height: 150%;
+    border-radius: 3%;
+    z-index: 100;
+    text-align: center;
+    transform: scale(1);
+    transition: 0.9s ease-in all;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ventana-modal img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border: none;
+  }
+  .ventana-modal h1 {
+    color: #363536;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .ventana-modal p {
+    color: #292829;
+    font-size: 1.2rem;
+  }
+  .ventana-modal .boton {
+    background: #2f2f2fc0;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 100px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 60px;
+  }
+  .ventana-modal .boton:hover {
+    background: #1c1c1c;
+  }
+  .ventana-modal .activo {
+    display: block;
+  }
+  .fondo-modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9176470588);
+    padding-top: 100px;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .fondo-modal.activo {
+    display: block;
+  }
+  /*estilo pagina de hombres*/
+    /*menu hombres*/
+    .navlogo2 {
+      padding-left: 40px;
+    }
+    .respmenuhombres img {
+      width: 75px;
+      height: 75px;
+      padding: 10px;
+    }
+    .respmenuhombres input[type="checkbox2"] {
+      visibility: hidden;
+    }
+    .respmenuhombres .bi-list2 {
+      visibility: hidden;
+    }
+    .respmenuhombres {
+      background-color: #19171a;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+    .menuhombres {
+      display: flex;
+      padding-top: 10px;
+      padding-left: 550px;
+    }
+    .menuhombres li {
+      padding: 5px 10px;
+      list-style-type: none;
+      margin-top: 10px;
+    }
+    .menuhombres a {
+      color: #171717;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ffffff;
+    }
+.productoshombres {
+  margin: 2em 0;
   text-align: center;
-  padding: 15px;
-  display: block;
-  font-size: 2rem;
+
+.productoshombres h2{
+ font-size: 2em;
 }
-.fondotarget {
-  background-color: #fad6f567;
-  width: 100%;
-  text-align: center;
+.productoshombres ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.fondotarget p {
-  text-align: center;
-  padding: 10px 65px 10px 65px;
-  font-size: large;
+
+.productoshombres li {
+margin: 0 1em;
 }
-.infogatos {
-  color: #ffffff;
-  background-color: #8428973f;
-  width: 100%;
+
+.productoshombres a {
+text-decoration: none;
+color: #333;
 }
-.target {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-e
+
+.productoshombres img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.productoshombres h3 {
+margin: 0.5em 0;
+}
+
+.productoshombres .precio {
+font-weight: bold;
+}
+
