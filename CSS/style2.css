@@ -1,0 +1,701 @@
+html {
+    font-family: 'Poppins', sans-serif;
+  }
+ /*estilo para parte uno */
+h1{
+  background-color: #727272;
+  color: #272525;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 1%;
+}
+
+/* Estilos para la página de inicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .banner {
+    background-image: url("../img/BANNER\ 2.jpg");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  /*Modal primero */
+  .ventana-modal {
+    margin: 20px auto;
+    background-image: url("../img/Set\ of\ clothes\,\ accessories\ for\ man\ and\ woman.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    width: 450px;
+    line-height: 150%;
+    border-radius: 3%;
+    z-index: 100;
+    text-align: center;
+    transform: scale(1);
+    transition: 0.9s ease-in all;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ventana-modal img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border: none;
+  }
+  .ventana-modal h1 {
+    color: #262426;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .ventana-modal p {
+    color: #4d4b4e;
+    font-size: 1.2rem;
+  }
+  .ventana-modal .boton {
+    background: #000000c0;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 100px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 60px;
+  }
+  .ventana-modal .boton:hover {
+    background: #787878;
+  }
+  .ventana-modal .activo {
+    display: block;
+  }
+  .fondo-modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9176470588);
+    padding-top: 100px;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .fondo-modal.activo {
+    display: block;
+  }
+  /*modal segundo*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 450px;
+    line-height: 150%;
+    border-radius: 10px;
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*menu*/
+  .navlogo {
+    padding-left: 40px;
+  }
+  .respmenu img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+  }
+  .respmenu input[type="checkbox"] {
+    visibility: hidden;
+  }
+  .respmenu .bi-list {
+    visibility: hidden;
+  }
+  .respmenu {
+    background-color: #272627;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  .menu {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 550px;
+  }
+  .menu li {
+    padding: 5px 10px;
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .menu a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+  
+  /*fin del menu inicio pag*/
+  .inicioportada {
+    background-image: url(Set\ of\ clothes\,\ accessories\ for\ man\ and\ woman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+  .inicio {
+    background-color: #ffffff6c;
+  }
+  .inicio h1 {
+    font-size: 3.5rem;
+    padding: 150px 0px 250px 0px;
+    margin: 0px 0px 0px 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #262128;
+  }
+  .info {
+    background-color: #f9dbf5;
+    border: 3px #ffffff solid;
+    text-align: center;
+  }
+  .info h2 {
+    color: #414041;
+    padding: 15px 40px 0px 40px;
+  }
+  .info p {
+    text-align: center;
+    padding: 10px 65px 10px 65px;
+    font-size: large;
+  }
+  
+  .infoconsultas {
+    background-color: #b5b5b5;
+    border: 3px #ffffff solid;
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .infoconsultas p {
+    text-align: center;
+    padding: 10px 65px 10px 65px;
+    font-size: large;
+  }
+  /*carrousel*/
+.carruspresentacion h2 {
+    font-size: 3rem;
+    padding: 45px 0px 10px 0px;
+    font-weight: bold;
+    text-align: center;
+    color: #2d2c2e;
+  }
+  .carruspresentacion p {
+    text-align: center;
+    padding: 0px 65px 10px 65px;
+    font-size: large;
+  }
+  .carousel-productos1 {
+    width: 50%;
+    display: block;
+    margin: auto;
+    position: center;
+    padding: 20px;
+    box-shadow: 0 5px 100px rgba(135, 132, 136, 0.24);
+    ;
+  }
+  .carousel-indicators {
+    z-index: 1;
+  }
+  .carousel-control-prev {
+    z-index: 1;
+    background-color: #1f182186;
+    border-radius: 100%;
+    margin: auto;
+    height: 200px;
+    display: block;
+    display: block;
+  }
+  .carousel-control-next {
+    z-index: 1;
+    background-color: #ffffff;
+    background-color: #08070886;
+    border-radius: 100%;
+    margin: auto;
+    height: 200px;
+    display: block;
+  }
+  /*boton ropa*/
+  .btnropa1 a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .btnropa1 {
+    background: #222222c0;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 350px;
+  }
+  .btnropa1:hover {
+    background: #353535;
+  }
+  .btnropa2 a {
+    text-align: center;
+    color: #858585;
+    text-decoration: none;
+  }
+  .btnropa2 {
+    background: #251f26c0;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 350px;
+  }
+  .btnropa2:hover {
+    background: #515151;
+  }
+  /*boton js*/
+.botonjava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+  }
+  .botonsaludo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  /*footer*/
+  .pie {
+    background-color: #221c2386;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pfooter {
+    margin: 0px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .iniciofooter {
+    margin: 0px;
+    padding: 15px 20px 35px 20px;
+    font-size: 1.5rem;
+  }
+  .iniciofooter .bi-instagram {
+    color: #2a2626;
+  }
+  .iniciofooter .bi-youtube {
+    color: #292525;
+  }
+  .iniciofooter .bi-facebook {
+    color: #353333;
+  }
+  /*boton conatcto*/
+  .btnCONTAC a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .btnCONTAC {
+    background: #444444c0;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 350px;
+  }
+  .btnCONTAC:hover {
+    background: #131313;
+  }
+  /*CONTACTO*/
+.iniciocontact {
+    color: #ffffff;
+    background-color: #19151a3f;
+    width: 100%;
+  }
+  .iniciocontact h1 {
+    font-size: 2.5rem;
+    padding: 90px 0px 5px 40px;
+    margin: 0px 0px 15px 15px;
+    font-weight: bold;
+  }
+  .infocont {
+    margin: 20px;
+    padding: 10px 40px 10px 40px;
+  }
+  .infocont p {
+    text-align: justify;
+    padding: 10px 30px 10px 30px;
+    font-size: large;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 15px 35px 15px;
+  }
+  .formularioadop {
+    background-color: #f7d2f2;
+    width: 60%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 20px #1e042467;
+    align-items: center;
+  }
+  .forminfo {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .forminfo input {
+    border-radius: 5px;
+    margin: 0px 10px;
+  }
+  .forminfomensaje label {
+    display: inline;
+  }
+  button {
+    background-color: rgb(255, 255, 255);
+    color: #353435;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #2d2d2d;
+    color: #ffffff;
+  }
+  /*estilo pagina de hombres*/
+    /*menu hombres*/
+    .navlogo2 {
+        padding-left: 30px;
+      }
+      .respmenuhombres img {
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+      }
+      .respmenuhombres input[type="checkbox2"] {
+        visibility: hidden;
+      }
+      .respmenuhombres .bi-list2 {
+        visibility: hidden;
+      }
+      .respmenuhombres {
+        background-color: #080708;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+      }
+      .menuhombres {
+        display: flex;
+        padding-top: 10px;
+        padding-left: 550px;
+      }
+      .menuhombres li {
+        padding: 5px 10px;
+        list-style-type:none;
+        margin-top: 10px;
+      }
+      .menuhombres a {
+        color: #080808;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+  
+   .productoshombres {
+    margin: 2em 0;
+    text-align: center;
+  }
+  
+  .productoshombres h2 {
+    font-size: 2em;
+  }
+  
+  .productoshombres ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productoshombres li {
+    margin: 0 1em;
+  }
+  
+  .productoshombres a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .productoshombres img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .productoshombres h3 {
+    margin: 0.5em 0;
+  }
+  
+  .productoshombres .preciohombres {
+    font-weight: bold;
+  }
+  
+  /*info e la pagina de los hombres*/
+  .infodelapagina {
+    background-color: #f9dbf5;
+    border: 3px #ffffff solid;
+    text-align: center;
+  }
+  .infodelapagina h2 {
+    color: #918b91;
+    padding: 15px 40px 0px 40px;
+  }
+  .infodelapagina p {
+    text-align: center;
+    padding: 10px 65px 10px 65px;
+    font-size: large;
+  }
+  
+  .infodelapagina {
+    background-color: #d5cbcb;
+    border: 3px #ffe9e9 solid;
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .infodelapagina p {
+    text-align: center;
+    padding: 10px 65px 10px 65px;
+    font-size: large;
+  }
+  
+  
+  /*estilo pagina de mujeres*/
+      /*menu mujeres*/
+      .navlogo4 {
+        padding-left: 30px;
+      }
+      .respmenu3 img {
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+      }
+      .respmenu3 input[type="checkbox3"] {
+        visibility: hidden;
+      }
+      .respmenu3 .bi-list2 {
+        visibility: hidden;
+      }
+      .respmenu3 {
+        background-color: #080708;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+      }
+      .menuhombres {
+        display: flex;
+        padding-top: 10px;
+        padding-left: 550px;
+      }
+      .menuhombres li {
+        padding: 5px 10px;
+        list-style-type:none;
+        margin-top: 10px;
+      }
+      .menuhombres a {
+        color: #080808;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+   
+  
+  .productosmujeres {
+  margin: 2em 0;
+  text-align: center;
+  }
+  
+  .productosmujeres h2 {
+  font-size: 2em;
+  }
+  
+  .productosmujeres ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .productosmujeres li {
+  margin: 0 1em;
+  }
+  
+  .productosmujeres a {
+  text-decoration: none;
+  color: #242323;
+  }
+  
+  .productosmujeres img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  }
+  
+  .productosmujeres h3 {
+  margin: 0.5em 0;
+  }
+  
+  .productosmujeres .preciomujeres {
+  font-weight: bold;
+  }
+  
+  /*info e la pagina de las mujeres*/
+  .infodelapaginamujeres {
+  background-color: #f9dbf5;
+  border: 3px #ffffff solid;
+  text-align: center;
+  }
+  .infodelapaginamujeres h2 {
+  color: #7d7b7d;
+  padding: 15px 40px 0px 40px;
+  }
+  .infodelapaginamujeres p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+  }
+  
+  .infodelapaginamujeres {
+  background-color: #d5cbcb;
+  border: 3px #ffe9e9 solid;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+  .infodelapaginamujeres p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+  }
+  .btnjava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+  }
+    .btnjava {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 35px;
+    }
