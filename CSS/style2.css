@@ -90,7 +90,8 @@ body {
     font-weight: bold;
   }
   .ventana-modal p {
-    color: #4d4b4e;
+    color: #000000;
+    background-color: white;
     font-size: 1.2rem;
   }
   .ventana-modal .boton {
@@ -126,6 +127,7 @@ body {
   .fondo-modal.activo {
     display: block;
   }
+  
   /*modal segundo*/
   .modal {
     display: none;
@@ -162,6 +164,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
   /*menu*/
   .navlogo {
     padding-left: 40px;
