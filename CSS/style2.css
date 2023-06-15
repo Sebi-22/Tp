@@ -262,36 +262,48 @@ body {
     padding: 0px 65px 10px 65px;
     font-size: large;
   }
-  .carousel-inner {
-    width: 50%;
-    display: block;
-    margin: auto;
-    position: center;
-    padding: 20px;
-    box-shadow: 0 5px 100px rgba(135, 132, 136, 0.24);
-    ;
-  } 
-  .carousel-indicators {
-    z-index: 1;
+  /*presentacion de productos nuevos*/
+  .productos {
+    margin: 2em 0;
+    text-align: center;
   }
-  .carousel-control-prev {
-    z-index: 1;
-    background-color: #1f182186;
-    border-radius: 100%;
-    margin: auto;
-    height: 200px;
-    display: block;
-    display: block;
+  
+  .productos h2 {
+    font-size: 2em;
   }
-  .carousel-control-next {
-    z-index: 1;
-    background-color: #ffffff;
-    background-color: #08070886;
-    border-radius: 100%;
-    margin: auto;
-    height: 200px;
-    display: block;
+  
+  .productos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .productos li {
+    margin: 0 1em;
+  }
+  
+  .productos a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .productos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .productos h3 {
+    margin: 0.5em 0;
+  }
+  
+  .productos .precio {
+    font-weight: bold;
+  }
+}
   /*boton ropa*/
   .btnropa1 a {
     text-align: center;

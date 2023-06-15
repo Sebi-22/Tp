@@ -2,24 +2,18 @@ const botonAviso = document.getElementById("cerrar-aviso");
 const ventanaModal = document.getElementById("ventana-modal");
 const fondoModal = document.getElementById("fondo-modal");
 
-
 if (!sessionStorage.getItem("ventana-modal-visto")) {
     ventanaModal.classList.add("activo")
     fondoModal.classList.add("activo")
 }
-if (!sessionStorage.getItem("ventana-modal-visto")) {
-    ventanaModal.classList.add("activo")
-    fondoModal.classList.add("activo")
+botonAviso.addEventListener("click", () => {
+    ventanaModal.classList.remove("activo");
     sessionStorage.setItem("ventana-modal-visto", true)
-
-}
-
-
-//boton primero
+})
+//boton 1
 document.getElementById('btnsaludo').onclick = function () {
     alert('Saludos, Gracias por visitar StyleHub!');
 }
-
 //modal segundo
 var modal = document.getElementById("ventanaModal");
 var boton = document.getElementById("abrirModal");
@@ -30,4 +24,3 @@ boton.addEventListener("click", function () {
 span.addEventListener("click", function () {
     modal.style.display = "none";
 });
-
