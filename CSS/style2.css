@@ -148,18 +148,20 @@ body {
     line-height: 150%;
     border-radius: 10px;
   }
-  .close {
-    color: black;
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
+ .modal-content h1{
+  margin-bottom: 15px;
+ }
+  .modal-content p{
+    padding: 15px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.button1 {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
   /*menu*/
   .navlogo {
     padding-left: 40px;
