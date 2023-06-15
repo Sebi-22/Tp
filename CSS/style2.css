@@ -262,7 +262,7 @@ body {
     padding: 0px 65px 10px 65px;
     font-size: large;
   }
-  .carousel-productos1 {
+  .carousel-inner {
     width: 50%;
     display: block;
     margin: auto;
@@ -270,7 +270,7 @@ body {
     padding: 20px;
     box-shadow: 0 5px 100px rgba(135, 132, 136, 0.24);
     ;
-  }
+  } 
   .carousel-indicators {
     z-index: 1;
   }
